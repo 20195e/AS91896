@@ -9,7 +9,7 @@ class color:
 
 name = input ("What's your name?")
 if name == name:
-  print ("Hello," + name + ", Welcome to the price checker 1.0.")
+  print ("Hello," + name + ", Welcome to the Price Checker 1.0.")
 #I have added an optional set of instructions to assist in helping the user to understand how to use the program as intended.
 def Instructions():
   print(color.CYAN + "\nWould you like some basic instructions on how to use this program?" + color.END)
@@ -28,14 +28,15 @@ def Instructions():
     Instructions()
 def budget():
   print("Please enter your budget.")
-  amount = int(input(""))
+  amount = float(input(""))
 
-  if 0 >= amount <= 10000:
+  if amount <=0:
    print("Please input either a valid number or one greater than 0.")
 
-  elif amount < 0:
-    print ("You have enetered your budget as", amount ,"is that okay")
+  elif amount >100:
+    print ("Pleae enter a number below 100")
 
-  elif amount > 10000:
-    print ("Please enter a number below 10000")
+  else:
+    print("Your budget is", amount)
 Instructions()
+
