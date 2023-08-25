@@ -1,8 +1,8 @@
-def products():
-  print ("1. Mainland Cheese = $10.00\n",
-         "2. Fantastic Rice Crackers = $2.40\n",
-         "3. Arnott's Shapes = $3.00\n",
-         "4. Anchor Milk = $12.00\n",
-         "5. Greek Yogurt = $6.00\n",
-         "6. Free range eggs = $9.00")
-  
+products = {
+        "1. Mainland Cheese": 4.19,
+        "2. Fantastic Rice Crackers": 8.27,
+        "3. Arnott's Shapes": 5.10,
+        "4. Anchor Milk": 8.50,
+        "5. Greek Yogurt": 2.03
+        "6. Free Range Eggs": 9.02
+    }
